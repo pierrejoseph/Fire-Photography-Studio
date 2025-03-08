@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Photography Studios</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #c9bd37; /* Light Blue Background */
+            color: #333;
+        }
+
+        header {
+            background-color: #270ec6; /* Slate Blue Header */
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #ebebf4; /* Lavender Navigation */
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: #483d8b; /* Dark Slate Blue Links */
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #8a2be2; /* Violet Hover */
+        }
+
+        .container {
+            width: 80%;
+            margin: 3rem auto;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: #6a5acd;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .chat-box, .cart, .payment, .touchup, .crop {
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 6px;
+            background-color: #f9f9f9;
+        }
+
+        h2, h3 {
+            color: #483d8b;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            background-color: #8a2be2;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #9370db;
+        }
+
+        input[type="text"], textarea, select {
+            width: calc(100% - 22px);
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fire Photography Studios </h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>Fire Photography Studios </h2>
+        <p>Capture your precious moments with style and elegance.</p>
+
+        <div class="gallery">
+            <img src="./images/akoya-010219-hdr6 (1).jpg" alt="Photo 1">
+            <img src="./images/akoya-010219-hdr3.jpg" alt="Photo 2">
+            <img src="./images/Runaway-Yacht--40.jpg" alt="Photo 3">
+        </div>
+
+        <div class="chat-box">
+            <h3>Customer Service Chat</h3>
+            <textarea placeholder="Enter your message..." rows="4" cols="50"></textarea><br>
+            <button>Send</button>
+        </div>
+
+        <div class="cart">
+            <h3>Shopping Cart</h3>
+            <p>Photo 1: $10</p>
+            <p>Photo 2: $15</p>
+            <p>Total: $25</p>
+            <button>Checkout</button>
+        </div>
+
+        <div class="payment">
+            <h3>Online Payment</h3>
+            <input type="text" placeholder="Card Number"><br>
+            <input type="text" placeholder="Expiry Date"><br>
+            <input type="text" placeholder="CVV"><br>
+            <button>Pay Now</button>
+            <p>Confirmation: Payment Successful!</p>
+        </div>
+
+        <div class="touchup">
+            <h3>Touch Up Request</h3>
+            <select>
+                <option value="photo1">Photo 1</option>
+                <option value="photo2">Photo 2</option>
+            </select><br>
+            <textarea placeholder="Enter your request..." rows="4" cols="50"></textarea><br>
+            <button>Submit Request</button>
+        </div>
+
+        <div class="crop">
+            <h3>Crop Picture</h3>
+            <select>
+                <option value="photo1">Photo 1</option>
+                <option value="photo2">Photo 2</option>
+            </select><br>
+            <p>Crop Tool Placeholder (Functionality to be added)</p>
+            <button>Apply Crop</button>
+        </div>
+
+        <div>
+            <h3>Marketing Ideas</h3>
+            <ul>
+                <li>Integrated Social Media Feed</li>
+                <li>Customer Testimonials Section</li>
+                <li>Blog with Photography Tips</li>
+                <li>Online Booking for Photo Sessions</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Fire Photography Studios </p>
+    </footer>
+
+</body>
+</html>
